@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assetes/css/main.css">
+	<title>YouTicket</title>
+</head>
+<body>
+<!-- Inicio Splach
+	<div class="container-fluid splash col-xs-12">
+		<div class="row">
+			<div class= "col-xs-12 text-center">
+				<img class="img-responsive" src="assetes/img/">	
+			</div>
+		</div>
+	</div>
+-->	
+<!-- Inicio página -->
+<!-- Part 1: Nav-->
+<nav class="navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+   <div class="navbar-header">
+   	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	     	<span class="sr-only">Desplegar navegación</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+   	</button>
+    	<a class="navbar-brand" href="#"><img src="assetes/img/log-app-3-01.png" class="logotipo"></a>
+   </div>
+ 
+  <!-- Enlaces de navegación -->
+ 	<div class="collapse navbar-collapse navbar-ex1-collapse">
+    	<ul class="nav navbar-nav">
+      	<li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Página principal</a></li>
+      	<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Iniciar sesión / Salir</a></li>
+      	<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mis datos</a></li>
+      	<li><a href="#"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Tus favoritos</a></li>
+    	</ul>
+   </div>
+</nav>
+
+<div class="container-fluid search-movie">
+	<div class="row">
+		<div class="col-xs-9">
+	    	<form class="navbar-form navbar-left" role="search">
+	      	<div class="form-group">
+	        		<input type="text" class="form-control text-center" placeholder= "Buscar película">					
+	      	</div>
+	    	</form>	
+    	</div>
+    	<div class="col-xs-1 search-col">
+    		<button type="search" class="btn btn-default btn-search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+    	</div>
+    	<div class="col-xs-2 text-right pay-col">
+			<a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+    	</div>
+   </div>	
+</div>
+
+<div class="container-fluid movies">
+   <div class="row">
+   	<div class="col-xs-12">
+   		<ul class="nav nav-pills">
+			  <li role="presentation" class="active"><a href="#">Preventas</a></li>
+			  <li role="presentation"><a href="#">Estrenos 2018</a></li>
+			  <li role="presentation"><a href="#">Noticias</a></li>
+			</ul>	
+   	</div>	
+   </div> 
+	<div class="row">
+		<div class="col-xs-6 col-movie">
+			<img src="assetes/img/star_wars_last_jedi.jpg" class="movie">
+		</div>
+		<div class="col-xs-6 col-movie">
+			<img src="assetes/img/coco.jpg" class="movie">
+		</div>				
+	</div>
+</div>
+<!-- Script Files -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assetes/js/app.js"></script>
+</body>
+</html>
