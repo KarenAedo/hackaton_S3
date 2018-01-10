@@ -35,7 +35,7 @@ A tráves de una web - app
 Cuando se abran las pre-ventas de entradas en los cines gracias a la web -app tendrá la opción de que le notifique el día y la hora para que se organize de antes, pueda comprar la entrada con tiempo y sin perder su tiempo en informarse a través de otros medios. 
 También podrá tener la opción de que le notifiquen el día de estreno de una película que no tenga pre-venta necesariamente.
 
-[Nuestro sitio](https://www.google.com)
+[Nuestro sitio](https://cabezadeoveja.github.io/hackaton_S3/)
 
 ![Yourticket Logo](/assetes/img-readme/pantallazo-5-01.jpg)
 
