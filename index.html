@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -17,7 +17,22 @@
 			</div>
 		</div>
 	</div>
--->	
+-->
+	<!--registrarse con correo y contraseña-->
+	<!-- Estoy registrada yo / karen.aedo.mayorga@gmail.com / password:123456-->
+	<h4>Registro de usuarios</h4>
+	<input id="email" type="email" placeholder="Ingresa email">
+	<input id="contrasena" type="password" placeholder="Ingresa contraseña">
+	<button onclick="registrar()">Enviar</button>
+	
+	<!--autenticación de usuario en firebase con correo y contraseña-->
+	<h4>Ingreso de usuarios</h4>
+	<input id="email2" type="email" placeholder="Ingresa email">
+	<input id="contrasena2" type="password" placeholder="Ingresa contraseña">
+	<button onclick="ingreso()">Acceder</button>
+	<div id="contenido"></div>
+
+
 <!-- Inicio página -->
 <!-- Part 1: Nav-->
 <nav class="navbar navbar-default" role="navigation">
@@ -81,6 +96,9 @@
 		</div>				
 	</div>
 </div>
+
+<!--link firebase-->
+  	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 <!-- Script Files -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
