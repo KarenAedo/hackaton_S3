@@ -1,6 +1,6 @@
 
 // Con esto se inicializa Firebase-----------------------------------------
-  var config = {
+    var config = {
     apiKey: "AIzaSyCxa9FiZCuHuKMUJvhAF4Ii5dT4lrH-kTg",
     authDomain: "hackaton-cine.firebaseapp.com",
     databaseURL: "https://hackaton-cine.firebaseio.com",
