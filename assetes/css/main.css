@@ -135,3 +135,64 @@ img.movie{
 .paragraph-data{
 	color: #F7F8F9;
 }
+/* Registro */
+
+.img-logo{
+	display: inline-block;
+}
+#registry{
+	height: 100vh;
+	width:100%;
+	max-height: 100%;
+	background-size: cover;
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.input-email{
+	margin-bottom: 2em;
+}
+.input-password{
+	margin-bottom: 2em;	
+}
+.btn-login{
+	width: 100%;
+	color: #24171C;
+	background-color:   #E8C00B;
+}
+.btn-registry{
+	width: 100%;
+	color: #24171C;
+	background-color:  rgb(201, 203, 204);
+}
+.btn-registry:hover{
+	background-color:#E8C00B; 
+}
+
+/* Modal */
+
+.img-logo2{
+	width: 60%;
+	display: inline-block;
+}
+.btn-acceder{
+	background-color: #E8C00B;
+}
+
+/* Mis datos */
+
+#icon-profile{
+	color: #E8C00B;
+	font-size: 2,5em;
+	border: solid 1px #E8C00B;
+	border-radius: 50%;
+	padding: 20%;
+	margin-top: 40%;
+	text-align: center;
+}
+.text-profile{
+	color: #F7F8F9;
+	margin-top: 5%;
+}
+

@@ -40,15 +40,6 @@
 
 //--------------------------------------------------------------------------------------
 
-$('#btn-profile').click(function(){
-  $('#section-index').children().remove();
-      $('#section-profile').append('<div class="row">' +
-                          '<div class= "col-md-6 text-center">'+
-                            '<h5>nombre profile</h5>' +
-                          '</div>' +
-                          '</div>')
-})
-
 
 var notice = data.notice.info;
 
@@ -71,3 +62,46 @@ $('#btn-notice').click(function(){
   }
 })
 
+
+ //Esto es para que desaparezca la página de inicio ---------------------------------
+ 
+    $('.navbar').hide();
+    $('.search-movie').hide();
+    $('.movies').hide();
+    $('#my-data').hide();
+
+//al hacer click en iniciar sesión me lleve a mi página de inicio ------------------
+
+    $("#dropdownMenu1").click(function() {
+       
+      var user = (firebase.auth().onAuthStateChanged);
+      
+      if(user){
+        $('#registry').hide();
+        $('.navbar').show();
+        $('.search-movie').show();
+        $('.movies').show();
+        $('#my-data').hide();
+      }
+  });
+
+//al hacer click en acceder me lleve a mis datos ------------------------------------
+
+  $(".btn-acceder").click(function(){
+    var user = (firebase.auth().onAuthStateChanged);
+    if(user){
+      $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide();
+      
+    }
+});
+
+//al hacer click en mis datos me muestra ------------------------------------
+
+$("#btn-profile").click(function(){
+  $('.movies').children().remove();
+  $('#my-data').show();
+});

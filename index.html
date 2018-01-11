@@ -9,6 +9,67 @@
 	<title>YouTicket</title>
 </head>
 <body> 
+	<!--registrarse con correo y contraseña-->
+	<!-- Estoy registrada yo / karen.aedo.mayorga@gmail.com / password:123456-->
+	<div class="container-fluid" id="registry">
+		<div class="row">
+			<div class="col-xs-12  
+						col-md-offset-4 col-md-4 col-md-offset-4 text-center">
+				<img src="assetes/img/logo.png" alt="" class="img-logo img-responsive"> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-10 col-xs-offset-1 
+			            col-md-offset-4 col-md-4 col-md-offset-4 text-center">
+				<form action="">
+					<div>
+						<input id="email" type="email" class="form-control input-email" placeholder="Email" aria-describedby="basic-addon1">
+					</div>
+					<div>
+						<input id="contrasena" type="password" class="form-control input-password" placeholder="Contraseña" aria-describedby="basic-addon1">
+					</div>
+				</form>
+			</div>
+			<div class="col-xs-offset-1 col-xs-10 col-xs-offset-1
+			            col-md-offset-4 col-md-4 col-md-offset-4 text-center">
+				<button onclick="registrar()" class="btn btn-default dropdown-toggle btn-login" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Iniciar Sesión</button>
+				<h5>¿No tienes Cuenta?</h5>
+				<button type="button" class="btn btn-default btn-registry" data-toggle="modal" data-target="#exampleModal">Regístrate</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header text-center">
+				<img src="assetes/img/logo.png" alt="" class="img-logo2 img-responsive">
+				<div>
+			    	<input id="email2" type="email" class="form-control input-email" placeholder="Email" aria-describedby="basic-addon1">
+				</div>
+				<div>
+					<input id="contrasena2" type="password" class="form-control input-password" placeholder="Contraseña" aria-describedby="basic-addon1">
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+				<button onclick="ingreso()" type="button" class="btn btn-defauld btn-acceder" data-dismiss="modal">Acceder</button>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--autenticación de usuario en firebase con correo y contraseña
+	<h4>Registro de usuarios</h4>
+	<input id="email" type="email" placeholder="Ingresa email">
+	<input id="contrasena" type="password" placeholder="Ingresa contraseña">
+	<button onclick="registrar()">Enviar</button> -->
+	
+	<!--autenticación de usuario en firebase con correo y contraseña
+	<h4>Ingreso de usuarios</h4>
+	<input id="email2" type="email" placeholder="Ingresa email">
+	<input id="contrasena2" type="password" placeholder="Ingresa contraseña">
+	<button onclick="ingreso()">Acceder</button>
+	<div id="contenido"></div>--> 
+
 
 <!-- Inicio página -->
 <!-- Part 1: Nav-->
@@ -67,7 +128,6 @@
 			</ul>	
    	</div>	
    </div> 
-   <div>
 	<div class="row" id="movie-list">
 		<div class="col-xs-6 col-md-3 movie">
 			<img src="assetes/img/star_wars_last_jedi.jpg"
@@ -98,6 +158,17 @@
 	</div>
 </div>
 
+<!-- Mis Datos -->
+<div class="container-fluid" id="my-data">
+	<div class="row">
+		<div class="col-xs-2 col-md-1">
+			<span class="glyphicon glyphicon-user text-center" id="icon-profile" aria-hidden="true"></span>
+		</div>
+		<div class="col-xs-10 col-md-11">
+			<h4 class="text-profile">Karen Aedo</h4>
+		</div>
+	</div>
+</div>
 
 <div class="container-fluid" id="section-premiere">
 	<!--aca va la seccion de las otras películas de estreno-->
