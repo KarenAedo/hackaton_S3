@@ -104,7 +104,7 @@ Push.create('Hi there!', {
 
 //--------------------------------------------------------------------------------------
 
-
+//Data de sección noticias -------------------------------------------------------------
 
 var notice = data.notice.info;
 
@@ -190,32 +190,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a class="url-modal" href="${response.Website}" target="_blank">${response.Website}</a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis: </h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="starWars()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="starWars()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -250,32 +249,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a class="url-modal" href="${response.Website}" target="_blank">${response.Website}</a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="coco()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="coco()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -309,32 +307,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a class="url-modal" href="${response.Website}" target="_blank">${response.Website}</a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="logan()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="logan()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -368,32 +365,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a class="url-modal" href="${response.Website}" target="_blank">${response.Website}</a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="jumanji()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="jumanji()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -427,32 +423,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a></a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="yourName()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="yourName()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -486,32 +481,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a class="url-modal" href="${response.Website}" target="_blank">${response.Website}</a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="apePlanet()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="apePlanet()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -545,32 +539,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a class="url-modal" href="${response.Website}" target="_blank">${response.Website}</a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="fantasticBeasts()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="fantasticBeasts()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -604,32 +597,31 @@ $("#btn-profile").click(function(){
          /* iterate through array or object */
          var modalTitle =`
         <div class="col-md-12">
-            <h2>${response.Title}</h2>
+            <h2 class="title-modal">${response.Title}</h2>
           </div>
       `; 
 
          var output =`
         <div class="row">
-          <div class="col-md-12">            
-            <img src="${response.Poster}" class="thumbnail">
+          <div class="col-md-6">            
+            <img class="img-modal-movie" src="${response.Poster}" class="thumbnail">
+          </div>
+          <div class="col-md-6 list-modal">  
             <ul class="list-group">
               <li class="list-group-item"><strong>Género:</strong> ${response.Genre}</li>
               <li class="list-group-item"><strong>Duración:</strong> ${response.Runtime}</li>
               <li class="list-group-item"><strong>Año:</strong> ${response.Year}</li>              
               <li class="list-group-item"><strong>Director:</strong> ${response.Director}</li>
-              <li class="list-group-item"><strong>Actores:</strong> ${response.Actors}</li>
-              <li class="list-group-item"><strong>Website:</strong> <a href="${response.Website}" target="_blank">${response.Website}</a></li>
+              <li class="list-group-item"><strong>Reparto:</strong> ${response.Actors}</li>
+              <li class="list-group-item"><strong>Website:</strong> <a class="url-modal" href="${response.Website}" target="_blank">${response.Website}</a></li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="well">
-            <h3>Resumen</h3>
+          <div class="resumen-modal col-md-12">
+            <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default" onclick="furious()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" onclick="furious()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
-        </div>
       `;          
 
       };
@@ -644,6 +636,7 @@ $("#btn-profile").click(function(){
       //console.log("complete");
     }); 
   });
+
 
 //funcion que hara que al clickear notificarme se agregre la pelicula a mis datos
   function starWars () {

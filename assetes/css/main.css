@@ -10,7 +10,7 @@ body{
 }
 
 .navbar-brand {
-	padding: 6px 15px;
+	padding: 3px 15px 2px 15px;
 }
 
 .navbar-default{
@@ -32,7 +32,7 @@ body{
 }
 
 .logotipo{
-	height: 2em;
+	height: 2.6em;
 	width: auto;
 	padding-right: 2.5em;
 }
@@ -60,12 +60,6 @@ body{
 }
 
 .glyphicon{
-	color: #24171C;
-}
-
-.glyphicon-shopping-cart{
-	font-size: 18px;
-	padding-top: 0.32em;
 	color: #24171C;
 }
 
@@ -159,25 +153,62 @@ img.movie{
 .btn-login{
 	width: 100%;
 	color: #24171C;
-	background-color:   #E8C00B;
+	background-color: #E8C00B;
 }
 .btn-registry{
 	width: 100%;
 	color: #24171C;
-	background-color:  rgb(201, 203, 204);
+	background-color: rgb(201, 203, 204);
 }
 .btn-registry:hover{
 	background-color:#E8C00B; 
 }
 
-/* Modal */
+.nocount{
+	color: #F7F8F9;
+}
 
-.img-logo2{
-	width: 60%;
+/* Modal */
+.modal-content{
+	background-color: #24171C;
+}
+
+.title-modal{
+	margin-top: 0;
+	color: #E8C00B;
+	font-weight: bold;
+}
+
+.img-modal-movie{
+	width: 100%;
+}
+
+.resumen-modal{
+	color: #F7F8F9;
+	padding: 0 15px;
+}
+
+.url-modal, .list-group-item{
+	color: #24171C;
+}
+
+.img-logo2{	
 	display: inline-block;
 }
 .btn-acceder{
 	background-color: #E8C00B;
+}
+
+.btn-notificame{
+	background-color: #E8C00B;
+}
+
+.close {
+	color: #fff;
+}
+
+.list-group-item:first-child, .list-group-item:last-child{
+	border-radius: 0;
 }
 
 /* Mis datos */
