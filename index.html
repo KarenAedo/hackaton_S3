@@ -76,8 +76,8 @@
  
   <!-- Enlaces de navegación -->
  	<div class="collapse navbar-collapse navbar-ex1-collapse">
-    	<ul class="nav navbar-nav navbar-right">
-      	<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Página principal</a></li>
+    	<ul class="nav navbar-nav">
+      	<li id="btn-principal"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Página principal</a></li>
       	<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Iniciar sesión / Salir</a></li>
       	<li id="btn-profile"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mis datos</a></li>
       	<li class="pay-col"><a href="https://www.cinemark.cl/" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a></li>
@@ -89,8 +89,8 @@
    <div class="row">
    	<div class="col-xs-12">
    		<ul class="nav nav-pills">
-			  <li role="presentation" class="active"><a href="#">Preventas</a></li>
-			  <li role="presentation"><a href="#">Estrenos 2018</a></li>
+			  <li id="btn-preventas" role="presentation" class="active"><a href="#">Preventas</a></li>
+			  <li id="btn-estrenos" role="presentation"><a href="#">Estrenos 2018</a></li>
 			  <li id="btn-notice" role="presentation"><a href="#">Noticias</a></li>
 			</ul>	
    	</div>	
@@ -151,7 +151,7 @@
 		</div>
 
 		<div class="col-xs-6 col-md-3 movie">
-      <img src="assetes/img/jumanji.jpg" class="movie jumanji" data-toggle="modal" data-target="#myModal">
+      		<img src="assetes/img/jumanji.jpg" class="movie jumanji" data-toggle="modal" data-target="#myModal">
       <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -277,6 +277,279 @@
 	<img id="user-pic">
 	<span id="user-name"></span>
 </div>
+
+<!-- Estrenos 2018 -->
+<div class="container-fluid" id="section-estrenos">
+	 <div class="row">
+		<div class="col-xs-6 col-md-3 movie">
+			<img src="assetes/img/estreno-img/poster-01.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos">
+			<!--Modal-->
+			<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Molly's Game</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body thumbnail">
+						<img src="assetes/img/estreno-img/poster-01.jpg" alt="">
+						
+						<ul class="list-group">
+							<li class="list-group-item"><strong>Director:</strong><p>Aaron Sorkin</p></li>
+							<li class="list-group-item"><strong>Reparto:</strong><p>Jessica Chastain, Idris Elba, Kevin Costner.</p></li>
+							<li class="list-group-item"><strong>Sinopsis:</strong><p>Una esquiadora de talla mundial que llegó a ser 
+								 	millonaria antes de los 21. Tras perderse los Juego Olímpicos, Molly se fue a vivir a Los Angeles donde 
+								incluso trabajó de camarera. Gracias a sus dotes empresariales, la joven acabó ganando millones de dólares 
+								con el mundo del póker antes de que el FBI la investigara.</p></li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+		<div class="col-xs-6 col-md-3 movie">
+			<img src="assetes/img/estreno-img/poster-02.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos2">
+			<!--Modal-->
+			<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos2">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Tadeo, El Explorador Perdido 2: El Secreto Del Rey Midas</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body thumbnail">
+							<img src="assetes/img/estreno-img/poster-02.jpg" alt="">
+						
+							<ul class="list-group">
+								<li class="list-group-item"><strong>Director:</strong><p>David Alonso – Enrique Gato</p></li>
+								<li class="list-group-item"><strong>Reparto:</strong><p>Óscar Barberán, Michelle Jenner, Adriana Ugarte.</p></li>
+							  	<li class="list-group-item"><strong>Sinopsis:</strong><p>Tad Jones, el explorador más torpe, debe rescatar 
+									  a su querida Sara de un millonario que está buscando la ubiación de las tres partes del collar del 
+									  Rey Midas.</p></li>
+							</ul>
+					</div>
+						<div class="modal-footer">
+							<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3 movie">
+				<img src="assetes/img/estreno-img/poster-03.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos3">
+				<!--Modal-->
+				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos3">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Game Night</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body thumbnail">
+								<img src="assetes/img/estreno-img/poster-03.jpg" alt="">
+							
+								<ul class="list-group">
+									<li class="list-group-item"><strong>Director:</strong><p>John Francis Daley y Jonathan Goldstein</p></li>
+									<li class="list-group-item"><strong>Reparto:</strong><p>Jason Bateman, Rachel McAdams, Lamorne Morris, Michael C. Hall, Kyle Chandler</p></li>
+									<li class="list-group-item"><strong>Sinopsis:</strong><p>Jason Bateman y Rachel McAdams interpretan a Max y Annie, una pareja que participa 
+										en una reunión semanal de noche de juegos con amigos. Una de esas noches el grado de complejidad se eleva cuando Brooks (Kyle Chandler) 
+										–el carismático hermano de Max– organiza una fiesta temática de “Crimen Misterioso”, con criminales y agentes federales falsos. Pero entonces, 
+										el secuestro de Brooks parte del juego... ¿cierto? Estos seis jugadores ultracompetitivos intentarán resolver el caso para ganar, pero en el 
+										proceso descubrirán que ni el “juego” ni Brooks son lo que aparentan. El grupo de amigos estará uno encima del otro en el transcurso de esta caótica 
+										noche, pues cada pista los llevará a dar vuelcos inesperados. Sin reglas, sin puntos por ganar y sin una idea clara de quiénes son los jugadores, 
+										esta noche podría convertirse en lo más divertido que les ha pasado en la vida... o no.</p></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3 movie">
+				<img src="assetes/img/estreno-img/poster-04.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos4">
+				<!--Modal-->
+				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos4">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">The Glass Castle</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body thumbnail">
+								<img src="assetes/img/estreno-img/poster-04.jpg" alt="">
+							
+								<ul class="list-group">
+									<li class="list-group-item"><strong>Director:</strong><p>Destin Cretton.</p></li>
+									<li class="list-group-item"><strong>Reparto:</strong><p>Brie Larson, Noami Watts, Woody Harrelson.</p></li>
+									<li class="list-group-item"><strong>Sinopsis:</strong><p>Una exitosa periodista que durante muchos años ocultó 
+										un gran secreto. El de su familia. El padre, Rex, es un hombre carismático y entusiasta, 
+										que logra transmitir a sus hijos la pasión por vivir. Pero Rex es alcohólico, y cuando está borracho 
+										se convierte en una persona destructiva y poco de fiar. La madre es un espíritu libre, una pintora muy 
+										orgullosa de su arte que aborrece la idea de una vida convencional y que no está dispuesta a asumir la 
+										responsabilidad de criar a sus cuatro hijos. Viven aquí y allá y sobreviven como pueden. Los niños 
+										aprenden a cuidar de sí mismos, se protegen unos a otros, y finalmente consiguen salir delcírculo infernal 
+										en que se convierte la familia para marcharse a Nueva York. En el camino quedan noches donde duermen al aire libre en el desierto, 
+										pueblos donde acuden por una semana a la escuela, vecinos que los ayudan y abusos de todo tipo.</p></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<div class="col-xs-6 col-md-3 movie">
+				<img src="assetes/img/estreno-img/poster-05.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos5">
+				<!--Modal-->
+				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos5">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Peter Rabbit</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body thumbnail">
+								<img src="assetes/img/estreno-img/poster-05.jpg" alt="">
+							
+								<ul class="list-group">
+									<li class="list-group-item"><strong>Director:</strong><p>Will Gluck</p></li>
+									<li class="list-group-item"><strong>Reparto:</strong><p>Domhnall Gleeson, James Corden</p></li>
+									<li class="list-group-item"><strong>Sinopsis:</strong><p>Peter Rabbit no es un conejo cualquiera. 
+										Es un rebelde que viste camisa azul y no lleva pantalones. Peter vive junto a su familia y amigos, 
+										un grupo variopinto de animales que incluye incluso a un zorro. Todos ellos harán de las suyas en 
+										la granja de los McGregor, lugar en cuyo jardín disponen de deliciosos vegetales. La fiesta animal 
+										ha empezado, y esto es solo el principio.</p></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<div class="col-xs-6 col-md-3 movie">
+				<img src="assetes/img/estreno-img/poster-06.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos6">
+				<!--Modal-->
+				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos6">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">The New Mutants</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body thumbnail">
+								<img src="assetes/img/estreno-img/poster-06.jpg" alt="">
+							
+								<ul class="list-group">
+									<li class="list-group-item"><strong>Director:</strong><p>Josh Boone</p></li>
+									<li class="list-group-item"><strong>Reparto:</strong><p>Anya Taylor –Joy, Maisie Williams, Alice Braga, Henry Zaga, Charlie Heaton</p></li>
+									<li class="list-group-item"><strong>Sinopsis:</strong><p>La historia de los Nuevos Mutantes, un equipo de héroes compuesto por 
+										los primeros graduados de la escuela de Charles Xavier.</p></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3 movie">
+				<img src="assetes/img/estreno-img/poster-07.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos7">
+				<!--Modal-->
+				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos7">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">The Mimic</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body thumbnail">
+								<img src="assetes/img/estreno-img/poster-07.jpg" alt="">
+							
+								<ul class="list-group">
+									<li class="list-group-item"><strong>Director:</strong><p>Jung Huh</p></li>
+									<li class="list-group-item"><strong>Reparto:</strong><p>Jin Heo, Jun Hyeok Lee, Hyuk-kwon Park</p></li>
+									<li class="list-group-item"><strong>Sinopsis:</strong><p>En el corazón de una montaña vive un ser que 
+										causa el terror a todo aquel que pasa cerca. Una misteriosa criatura se ha apoderado de los límites 
+										del lugar y tiene la capacidad de copiar los sonidos humanos. Esa habilidad confunde a las personas 
+										y jugará un papel importante en contra de ellos, pues pueden ser fácilmente engañados y quedar a 
+										merced de esta criatura.</p></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="col-xs-6 col-md-3 movie">
+				<img src="assetes/img/estreno-img/poster-08.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos8">
+				<!--Modal-->
+				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos8">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">The Little Vampire</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body thumbnail">
+								<img src="assetes/img/estreno-img/poster-08.jpg" alt="">
+							
+								<ul class="list-group">
+									<li class="list-group-item"><strong>Director:</strong><p>Richard Claus, Karsten Kiilerich</p></li>
+									<li class="list-group-item"><strong>Reparto:</strong><p>Jim Carter, Rasmus Hardiker y Alice Krige.</p></li>
+									<li class="list-group-item"><strong>Sinopsis:</strong><p>El Pequeño Vampiro está basada en los best-sellers 
+										para niños de Angela Sommer-Bodenburg. Cuenta la historia de Rudolph, un vampiro de 13 años, cuyo clan 
+										está siendo amenazado por un peligroso cazador de vampiros. Él conoce a Tony, un mortal de la misma edad, 
+										quien está fascinado por los viejos castillos, los cementerios y los vampiros. Tony ayuda a Rudolph en su 
+										lucha, desbordante de humor y acción, contra sus adversarios. Juntos salvarán a la familia de Rudolph y 
+										se volverán grandes amigos.</p></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>		
+	</div>	
+</div>
+		
+
+
 
 
 <!--link firebase-->

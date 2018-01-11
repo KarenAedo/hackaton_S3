@@ -110,7 +110,10 @@ var notice = data.notice.info;
 
 $('#btn-notice').click(function(){
   for (var i = 0; i < notice.length; i++) {
-    $('#movie-list').children().remove();
+    $('#movie-list').hide();
+    $('#section-estrenos').hide();
+    $('#notify').hide();
+    $('#section-notice').show();
     $('#section-notice').append('<div class="row notice-movie-data">' +
                           '<div class= "col-md-offset-1 col-md-4 text-center">'+
                              '<img class="img-data" src="assetes/' + notice[i].picture + '">' +
@@ -134,6 +137,7 @@ $('#btn-notice').click(function(){
     $('.search-movie').hide();
     $('.movies').hide();
     $('#my-data').hide();
+    $('#section-estrenos').hide();
 
 //al hacer click en iniciar sesión me lleve a mi página de inicio ------------------
 
@@ -147,6 +151,7 @@ $('#btn-notice').click(function(){
         $('.search-movie').show();
         $('.movies').show();
         $('#my-data').hide();
+        $('#section-estrenos').hide();
       }
   });
 
@@ -160,6 +165,7 @@ $('#btn-notice').click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide();
+      $('#section-estrenos').hide();
       
     }
 });
@@ -167,8 +173,13 @@ $('#btn-notice').click(function(){
 //al hacer click en mis datos me muestra ------------------------------------
 
 $("#btn-profile").click(function(){
-  $('.movies').children().remove();
+  $('.movies').hide();
+  $('#section-notice').hide();
   $('#my-data').show();
+  $('#section-estrenos').hide();
+  $('#notify').show();
+  
+  
 });
 
 //funcion para mostrar informacion de las peliculas en un modal
@@ -646,6 +657,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt2527336";
     $.ajax({
@@ -692,6 +704,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt2380307";
     $.ajax({
@@ -738,6 +751,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt3315342";
     $.ajax({
@@ -784,6 +798,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt2283362";
     $.ajax({
@@ -831,6 +846,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt5311514";
     $.ajax({
@@ -878,6 +894,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt3450958";
     $.ajax({
@@ -925,6 +942,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt3183660";
     $.ajax({
@@ -972,6 +990,7 @@ $("#btn-profile").click(function(){
       $('#my-data').show();
       $('.search-movie').show();
       $('.movies').hide(); 
+      $('#section-index').hide();
 
     var movieId = "tt4630562";
     $.ajax({
@@ -1011,3 +1030,43 @@ $("#btn-profile").click(function(){
     }); 
 
   };     
+//Estrenos 2018 ----------------------------------------------------------
+  
+$('#btn-estrenos').click(function(){
+  $('#section-notice').hide();
+  $('#movie-list').hide();
+  $('#my-data').hide();
+  $('#notify').hide();
+  $('#section-estrenos').show();
+
+});
+
+//Pre ventas ----------------------------------------------------------
+
+$('#btn-preventas').click(function(){
+  $('#movie-list').show();
+  $('#notify').hide();
+  $('#section-estrenos').hide();
+  $('#section-notice').hide();
+  $('#my-data').hide();
+
+});
+
+//Página central - logo  ----------------------------------------------------------
+
+$('.logotipo').click(function(){
+  $('#section-index').show();
+  $('#movie-list').show();
+  $('#my-data').hide();
+  $('#notify').hide();
+  $('#section-notice').hide();
+});
+
+$('#btn-principal').click(function(){
+  $('#section-index').show();
+  $('#movie-list').show();
+  $('#my-data').hide();
+  $('#notify').hide();
+  $('#section-notice').hide();
+  
+});
