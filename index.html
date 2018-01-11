@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assetes/css/main.css">
-	<title>YouTicket</title>
+	<link rel="shortcut icon" href="assetes/img/log-app-2-01.png">
+	<title>YourTicket</title>
 </head>
 <body> 
 	<!--registrarse con correo y contraseña-->
@@ -130,33 +131,176 @@
    </div> 
 	<div class="row" id="movie-list">
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/star_wars_last_jedi.jpg"
-			class="movie">
+      <img src="assetes/img/star_wars_last_jedi.jpg" class="movie starWars" data-toggle="modal" data-target="#myModal">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 		</div>
+
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/coco.jpg" class="movie">
+      <img src="assetes/img/coco.jpg" class="movie coco" data-toggle="modal" data-target="#myModal">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 		</div>
+
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/logan.jpg" class="movie">
+      <img src="assetes/img/logan.jpg" class="movie logan" data-toggle="modal" data-target="#myModal">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 		</div>
+
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/jumanji.jpg" class="movie">
+      <img src="assetes/img/jumanji.jpg" class="movie jumanji" data-toggle="modal" data-target="#myModal">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>		
 		</div>
+
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/yourname.jpg" class="movie">
+      <img src="assetes/img/yourname.jpg" class="movie yourName" data-toggle="modal" data-target="#myModal">	
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>	
 		</div>
+
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/planeta_de_los_simios.jpg"
-			class="movie">
+      <img src="assetes/img/planeta_de_los_simios.jpg" class="movie apePlanet" data-toggle="modal" data-target="#myModal">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>			
 		</div>	
+
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/animales_fantasticos.jpg" class="movie">
+      <img src="assetes/img/animales_fantasticos.jpg" class="movie fantasticBeasts" data-toggle="modal" data-target="#myModal">	
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>	
 		</div>
+
 		<div class="col-xs-6 col-md-3 movie">
-			<img src="assetes/img/rapidoyfurioso.jpg" class="movie">
-		</div>			
+      <img src="assetes/img/rapidoyfurioso.jpg" class="movie furious" data-toggle="modal" data-target="#myModal">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modalTitle"></div>
+            </div>
+            <div class="modal-body">
+              <div class="descritionMovie"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>			
+		</div>	
+
 	</div>
 </div>
+
 
 <!-- Mis Datos -->
 <div class="container-fluid" id="my-data">
@@ -182,6 +326,7 @@
 	<img id="user-pic">
 	<span id="user-name"></span>
 </div>
+
 
 <!--link firebase-->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
