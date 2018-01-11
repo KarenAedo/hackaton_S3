@@ -149,7 +149,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="starWars()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -167,6 +167,7 @@ $("#btn-profile").click(function(){
     }); 
   });
 
+  
   $(".coco").click(function(){
     var movieId = "tt2380307";
     $.ajax({
@@ -208,7 +209,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="coco()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -267,7 +268,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="logan()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -326,7 +327,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="jumanji()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -385,7 +386,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="yourName()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -444,7 +445,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="apePlanet()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -503,7 +504,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="fantasticBeasts()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -562,7 +563,7 @@ $("#btn-profile").click(function(){
             <h3>Resumen</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+            <a href="#" class="btn btn-default" onclick="furious()"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
           </div>
         </div>
       `;          
@@ -579,3 +580,377 @@ $("#btn-profile").click(function(){
       //console.log("complete");
     }); 
   });
+
+//funcion que hara que al clickear notificarme se agregre la pelicula a mis datos
+  function starWars () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt2527336";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+  }; 
+
+  function coco () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt2380307";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+  };
+
+  function logan () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt3315342";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+  };
+
+  function jumanji () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt2283362";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+
+  };
+
+  function yourName () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt5311514";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+
+  };
+
+  function apePlanet () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt3450958";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+
+  };
+
+  function fantasticBeasts () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt3183660";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+
+  };
+
+  function furious () {
+    $('.fade').removeClass('modal-backdrop');
+     $('#registry').hide();
+      $('.navbar').show();
+      $('#my-data').show();
+      $('.search-movie').show();
+      $('.movies').hide(); 
+
+    var movieId = "tt4630562";
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        i: movieId
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      var output = "";
+      for ( m in response) {
+         /* iterate through array or object */
+         var output =`
+        <div class="row">
+          <div class="col-md-3">            
+            <img src="${response.Poster}" class="thumbnail movie-poster">
+          </div>
+          <div class="col-md-9">
+            <input type="button" value="Notificar">
+          </div>
+        </div>
+      `;          
+
+      };
+      $('#notify').html(output);
+
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      //console.log("complete");
+    }); 
+
+  };     

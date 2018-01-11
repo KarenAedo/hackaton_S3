@@ -195,3 +195,9 @@ img.movie{
 	color: #F7F8F9;
 	margin-top: 5%;
 }
+
+/*Foto pelicula*/
+.movie-poster {
+	width: 200px;
+	height: 300px;
+}
