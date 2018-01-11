@@ -55,15 +55,18 @@ var notice = data.notice.info;
 $('#btn-notice').click(function(){
   for (var i = 0; i < notice.length; i++) {
     $('#movie-list').children().remove();
-    $('#section-notice').append('<div class="row character">' +
-                          '<div class= "col-md-5 text-center">'+
+    $('#section-notice').append('<div class="row notice-movie-data">' +
+                          '<div class= "col-md-offset-1 col-md-4 text-center">'+
                              '<img class="img-data" src="assetes/' + notice[i].picture + '">' +
                           '</div>' +
-                          '<div class= "col-md-6">'+
-                            '<h3>' + notice[i].title + '</h3>' +
-                            '<h4>' + notice[i].subtitle + '</h4>' +
-                            '<p> ' + notice[i].parrafo + '</p>' +
-                            '</div>' +
+                          '<div class= "col-md-offset-0 col-md-6 col-md-offset-1">'+
+                            '<h3 class="title-data">' + notice[i].title + '</h3>' +
+                            '<h4 class="subtitle-data">' + notice[i].subtitle + '</h4>' +
+                            '<p class="paragraph-data"> ' + notice[i].parrafo + '</p>' +
+                            '<p class="paragraph-data"> ' + notice[i].parrafo2 + '</p>' +
+                            '<p class="paragraph-data"> ' + notice[i].parrafo3 + '</p>' +
+                            '<hr>' +
+                            '</div>' + 
                           '</div>')
   }
 })

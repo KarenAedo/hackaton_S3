@@ -114,7 +114,24 @@ img.movie{
 }
 
 /*data*/
+#section-notice{
+	padding: 2em 0 0 0;
+}
+
+.notice-movie-data{
+	padding: 0 0 2em 0;
+}
 
 .img-data{
 	width: 100%;
+}
+
+
+.title-data, .subtitle-data{
+	font-weight: bold;
+	color: #E8C00B;
+}
+
+.paragraph-data{
+	color: #F7F8F9;
 }
