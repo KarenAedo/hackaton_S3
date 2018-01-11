@@ -39,3 +39,32 @@
   }
 
 //--------------------------------------------------------------------------------------
+
+$('#btn-profile').click(function(){
+  $('#section-index').children().remove();
+      $('#section-profile').append('<div class="row">' +
+                          '<div class= "col-md-6 text-center">'+
+                            '<h5>nombre profile</h5>' +
+                          '</div>' +
+                          '</div>')
+})
+
+
+var notice = data.notice.info;
+
+$('#btn-notice').click(function(){
+  for (var i = 0; i < notice.length; i++) {
+    $('#movie-list').children().remove();
+    $('#section-notice').append('<div class="row character">' +
+                          '<div class= "col-md-5 text-center">'+
+                             '<img class="img-data" src="assetes/' + notice[i].picture + '">' +
+                          '</div>' +
+                          '<div class= "col-md-6">'+
+                            '<h3>' + notice[i].title + '</h3>' +
+                            '<h4>' + notice[i].subtitle + '</h4>' +
+                            '<p> ' + notice[i].parrafo + '</p>' +
+                            '</div>' +
+                          '</div>')
+  }
+})
+

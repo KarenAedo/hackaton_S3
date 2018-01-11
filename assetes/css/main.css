@@ -112,3 +112,9 @@ img.movie{
 .nav.navbar-nav{
 	padding-left: 1em;
 }
+
+/*data*/
+
+.img-data{
+	width: 100%;
+}
