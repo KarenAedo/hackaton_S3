@@ -214,32 +214,29 @@ img.movie{
 }
 
 /* Mis datos */
-
-#icon-profile{
-	color: #E8C00B;
-	font-size: 2,5em;
-	border: solid 1px #E8C00B;
-	border-radius: 50%;
-	padding: 20%;
-	margin-top: 40%;
-	text-align: center;
-}
-
-#notifications{
-	display: inline-block;
-}
 .text-profile{
-	color: #F7F8F9;
+	color: #E8C00B;
 	margin-top: 5%;
 }
 .preferences {
-	color: #F7F8F9;
+	color: #E8C00B;
 }
-
-/*Foto pelicula*/
-.movie-poster {
-	width: 200px;
-	height: 300px;
+.myPreferences{
+	padding: 0;
+	margin-left: 4em;
+}
+.myPreferencesHr{
+	background-color: #E8C00B;
+	border-color: #E8C00B;
+}
+.imgUser{
+	margin-top: 3.5em;
+}
+.btn-notify{
+	background-color: #E8C00B;
+	color: #fff;
+	border: 0.3em solid #E8C00B;
+	border-radius: 3%; 
 }
 
 

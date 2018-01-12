@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="assetes/css/lobibox.css">
 	<link rel="stylesheet" type="text/css" href="assetes/css/main.css">
 	<link rel="shortcut icon" href="assetes/img/log-app-contorno-01.png">
 	<title>YourTicket</title>
@@ -245,30 +247,44 @@
 	</div>
 </div>
 
-
 <!-- Mis Datos -->
 <div class="container-fluid" id="my-data">
+    
+
 	<div class="row">
 		<!--foto usuario-->
 		<div class="col-xs-2 col-md-1">
-			<span class="glyphicon glyphicon-user text-center" id="icon-profile" aria-hidden="true"></span>
+			<!--<span class="glyphicon glyphicon-user text-center" id="icon-profile" aria-hidden="true"></span>-->
+			<img src="assetes/img/user-x.png" alt="#" class="img-responsive img-circle imgUser">
 		</div>
 		<!--nombre usuario-->
 		<div class="col-xs-10 col-md-11">
-			<h3 class="text-profile">Karen Aedo</h3>
+			<h4 class="text-profile">Karen Aedo</h4>
+			<button class="btn-notify" id="miniDefaultRounded">Notifícame</button>
+			<hr class="myPreferencesHr">
 		</div>
-	</div>	
-	<div class="row">
-    <div class="col-xs-12 col-md-12">
+	</div>
+
+<div class="container" id="section-notifications">
+  <div class="row">
+    <div class="col-xs-11 col-xs-offset-1 col-md-11 col-md-offset-1 myPreferences">
       <h4 class="preferences">Mis Notificaciones</h4>
     </div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<h2 id="notify"></h2>
-		</div>
-	</div>
+  </div>
+    
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2 id="notify"></h2>
+        </div>
+    </div>
+
+
 </div>
+
+</div>
+
 <!-- Otros titulos/peliculas -->
 <div class="container-fluid" id="section-otros-titulos">
 	<div class="row">
@@ -711,13 +727,13 @@
     </footer>
 
 <!--link firebase-->
-  
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="assetes/js/jquery.1.11.min.js"></script>
 <!-- Script Files -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script scr="assetes/js/lobibox.min.js"></script>
 	<script src="assetes/js/data-notice.js"></script>
-	<script src="assetes/js/push.min.js"></script>
 	<script type="text/javascript" src="assetes/js/app.js"></script>
 </body>
 </html>

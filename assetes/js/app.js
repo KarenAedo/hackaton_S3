@@ -37,70 +37,17 @@
     });
   }
 
-  //Subiendo imagen de perfil a usuario
-  var TablaDeBaseDatos = firebase.database().ref('usuarios');
-  $('#upload-file-selector').change(function(){
-    if(this.files && this.files[0]){
-      var Archivo = new new FileReader();
-      Archivo.onload = function(){
-
-      };
-    }
-  });
-
-  //imagen de perfil
-$('#upload-profile').change(function(){
-  if(this.files && this.files[0]){
-    var archivo = new FileReader();
-    archivo.onload = function(e){
-    imgProfile = e.target.result;
-    //console.log(perfilImg);
-    };
-    archivo.readAsDataURL(this.files[0]);
-  }
-})
 
 //--------------------------------------------------------------------------------------
 
-//function notifyMe() {
-  // Comprobamos si el navegador soporta las notificaciones
- // if (!("Notification" in window)) {
-   // alert("Este navegador no soporta las notificaciones del sistema");
- // }
-
-  // Comprobamos si ya nos habían dado permiso
- // else if (Notification.permission === "granted") {
-    // Si esta correcto lanzamos la notificación
-   // var notification = new Notification("Holiwis :D");
- // }
-
-  // Si no, tendremos que pedir permiso al usuario
-  //else if (Notification.permission !== 'denied') {
-    //Notification.requestPermission(function (permission) {
-      // Si el usuario acepta, lanzamos la notificación
-      //if (permission === "granted") {
-     //   var notification = new Notification("Gracias majo!");
-   //   }
-   // });
-//  }
-
-  // Finalmente, si el usuario te ha denegado el permiso y 
-  // quieres ser respetuoso no hay necesidad molestar más.
-//}
-/*
-Push.Permission.request();
-Push.create('Hi there!', {
-    body: 'This is a notification.',
-    icon: 'icon.png',
-    timeout: 8000,             
-    vibrate: [100, 100, 100],
-    onClick: function() {
- 
-        console.log(this);
-    }  
-});*/
-  Push.create('Hola mundo');
-
+//Recordatorio de notificación
+$('#miniDefaultTitle').click(function () {
+    Lobibox.notify('default', {
+        size: 'mini',
+        title: 'Your Ticket',
+          msg: 'Te recordaremos la siguiente preventa.'
+    });
+});
 
 //--------------------------------------------------------------------------------------
 
