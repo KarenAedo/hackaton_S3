@@ -160,6 +160,7 @@ $('#btn-notice').click(function(){
         $('#movie-list').show();
         $('#section-otros-titulos').hide();
         $('#myFooter').show(); 
+        
       }
   });
 
@@ -191,6 +192,7 @@ $("#btn-profile").click(function(){
   $('#notify').show();
   $('#myFooter').show();
   $('#foundMovies').hide();
+  $('#section-otros-titulos').hide();
   
   
   
