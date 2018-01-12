@@ -224,7 +224,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis: </h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="starWars()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="starWars()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -283,7 +283,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="coco()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="coco()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -341,7 +341,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="logan()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="logan()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -399,7 +399,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="jumanji()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="jumanji()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -457,7 +457,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="yourName()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="yourName()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -515,7 +515,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="apePlanet()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="apePlanet()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -573,7 +573,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="fantasticBeasts()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="fantasticBeasts()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -631,7 +631,7 @@ $("#btn-profile").click(function(){
             <h3>Sinopsis:</h3>
             ${response.Plot}
             <hr>
-            <a href="#" class="btn btn-default btn-notificame" onclick="furious()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
+            <a href="#" class="btn btn-default btn-notificame" data-dismiss="modal" onclick="furious()"><span class="glyphicon glyphicon-bell notificame"></span> Notificarme</a>
           </div>
       `;          
 
@@ -1028,6 +1028,14 @@ $('#btn-preventas').click(function(){
 
 });
 
+$('#btn-otros-titulos').click(function(){
+  $('#section-otros-titulos').show();
+  $('#movie-list').hide();
+  $('#my-data').hide();
+  $('#notify').hide();
+  $('#section-notice').hide();
+});
+
 //Página central - logo  ----------------------------------------------------------
 
 $('.logotipo').click(function(){
@@ -1036,6 +1044,7 @@ $('.logotipo').click(function(){
   $('#my-data').hide();
   $('#notify').hide();
   $('#section-notice').hide();
+  $('#section-estrenos').hide();
 });
 
 $('#btn-principal').click(function(){
@@ -1043,6 +1052,6 @@ $('#btn-principal').click(function(){
   $('#movie-list').show();
   $('#my-data').hide();
   $('#notify').hide();
-  $('#section-notice').hide();
-  
+  $('#section-notice').hide();  
 });
+
