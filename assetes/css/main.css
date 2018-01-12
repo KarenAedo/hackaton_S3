@@ -133,9 +133,11 @@ img.movie{
 
 .img-logo{
 	display: inline-block;
+	padding-top: 2.5em;
 }
+
 #registry{
-	height: 100vh;
+	height: 90vh;
 	width:100%;
 	max-height: 100%;
 	background-size: cover;
@@ -144,6 +146,7 @@ img.movie{
 	align-items: center;
 	text-align: center;
 }
+
 .input-email{
 	margin-bottom: 2em;
 }
@@ -240,6 +243,7 @@ img.movie{
 	height: 300px;
 }
 
+
 /*Busqueda otras peliculas*/
 #foundMovies .well {
 	width: 100%;
@@ -253,6 +257,7 @@ img.movie{
 }
 .movieTitle {
 	margin-top: 10%;
+	color: #24171C;
 }
 .error-msg {
 	color: red;
@@ -271,4 +276,70 @@ img.movie{
 .modal-icon{
 	color: #f73f3f;
 	padding-left: 2%;
+}
+/*input*/
+.search-col{
+	padding-left: 0;
+}
+
+#section-otros-titulos{
+	padding-top: 1.5em;
+}
+
+/*Footer*/
+.footer-container{
+	padding: 0;
+}
+
+#myFooter {
+    background-color: ;
+    border-top: 1px solid #F7F8F9;
+    color: #F7F8F9;
+    padding-top: 50px;
+    box-sizing: border-box;
+	clear: both;
+}
+
+.footer-copyright {
+    background-color: #E8C00B;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 2em;
+}
+
+.footer-copyright p {
+    margin: 10px;
+    color: #24171C;
+    font-weight: bold;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+.logo-footer{
+	width: 100%;
 }

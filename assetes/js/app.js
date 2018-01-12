@@ -114,6 +114,9 @@ $('#btn-notice').click(function(){
     $('#section-estrenos').hide();
     $('#notify').hide();
     $('#section-notice').show();
+    $('#section-otros-titulos').hide();
+    $('#myFooter').show(); 
+    $('#foundMovies').hide();
     $('#section-notice').append('<div class="row notice-movie-data">' +
                           '<div class= "col-md-offset-1 col-md-4 text-center">'+
                              '<img class="img-data" src="assetes/' + notice[i].picture + '">' +
@@ -138,8 +141,9 @@ $('#btn-notice').click(function(){
     $('.movies').hide();
     $('#my-data').hide();
     $('#section-estrenos').hide();
-    
-
+    $('#section-otros-titulos').hide();
+    $('#myFooter').hide(); 
+    $('#foundMovies').hide();
 //al hacer click en iniciar sesión me lleve a mi página de inicio ------------------
 
     $("#dropdownMenu1").click(function() {
@@ -154,7 +158,8 @@ $('#btn-notice').click(function(){
         $('#my-data').hide();
         $('#section-estrenos').hide();
         $('#movie-list').show();
-        
+        $('#section-otros-titulos').hide();
+        $('#myFooter').show(); 
       }
   });
 
@@ -165,13 +170,14 @@ $('#btn-notice').click(function(){
     if(user){
       $('#registry').hide();
       $('.navbar').show();
-      $('#my-data').show();
       $('.search-movie').show();
+      $('#my-data').show();
       $('.movies').hide();
       $('#section-estrenos').hide();
       $('#movie-list').show();
-      
-      
+      $('#section-otros-titulos').hide(); 
+      $('#myFooter').show();
+      $('#foundMovies').hide();
     }
 });
 
@@ -183,6 +189,8 @@ $("#btn-profile").click(function(){
   $('#my-data').show();
   $('#section-estrenos').hide();
   $('#notify').show();
+  $('#myFooter').show();
+  $('#foundMovies').hide();
   
   
   
@@ -1020,8 +1028,9 @@ $('#btn-estrenos').click(function(){
   $('#my-data').hide();
   $('#notify').hide();
   $('#section-estrenos').show();
-  
-
+  $('#section-otros-titulos').hide(); 
+  $('#myFooter').show();
+  $('#foundMovies').hide();
 });
 
 //Pre ventas ----------------------------------------------------------
@@ -1032,8 +1041,9 @@ $('#btn-preventas').click(function(){
   $('#section-estrenos').hide();
   $('#section-notice').hide();
   $('#my-data').hide();
-  
-
+  $('#section-otros-titulos').hide();
+  $('#myFooter').show(); 
+  $('#foundMovies').hide();
 });
 
 $('#btn-otros-titulos').click(function(){
@@ -1042,6 +1052,9 @@ $('#btn-otros-titulos').click(function(){
   $('#my-data').hide();
   $('#notify').hide();
   $('#section-notice').hide();
+  $('#section-estrenos').hide();
+  $('#myFooter').show();
+  $('#foundMovies').show();
 });
 
 //Página central - logo  ----------------------------------------------------------
@@ -1053,6 +1066,9 @@ $('.logotipo').click(function(){
   $('#notify').hide();
   $('#section-notice').hide();
   $('#section-estrenos').hide();
+  $('#section-otros-titulos').hide();
+  $('#myFooter').show();
+  $('#foundMovies').hide();
 });
 
 $('#btn-principal').click(function(){
@@ -1060,7 +1076,10 @@ $('#btn-principal').click(function(){
   $('#movie-list').show();
   $('#my-data').hide();
   $('#notify').hide();
-  $('#section-notice').hide();  
+  $('#section-notice').hide();
+  $('#section-otros-titulos').hide();
+  $('#myFooter').show();
+  $('#foundMovies').hide();  
 });
 
 //Iniciar sesión / salir  ----------------------------------------------------------
@@ -1074,6 +1093,8 @@ $('#btn-salir').click(function(){
   $('.navbar').hide();
   $('#notify').hide();
   $('#registry').show();
+  $('#myFooter').hide();
+  $('#foundMovies').hide();
 });
 
 //funcion que muestra fotos segun busqueda
