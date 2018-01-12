@@ -678,9 +678,6 @@ $("#btn-profile").click(function(){
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
           </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
-          </div>
         </div>
       `;          
 
@@ -724,9 +721,6 @@ $("#btn-profile").click(function(){
         <div class="row">
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
-          </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
           </div>
         </div>
       `;          
@@ -772,9 +766,6 @@ $("#btn-profile").click(function(){
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
           </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
-          </div>
         </div>
       `;          
 
@@ -818,9 +809,6 @@ $("#btn-profile").click(function(){
         <div class="row">
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
-          </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
           </div>
         </div>
       `;          
@@ -866,10 +854,7 @@ $("#btn-profile").click(function(){
         <div class="row">
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
-          </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
-          </div>
+          </div>>
         </div>
       `;          
 
@@ -914,9 +899,6 @@ $("#btn-profile").click(function(){
         <div class="row">
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
-          </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
           </div>
         </div>
       `;          
@@ -963,9 +945,6 @@ $("#btn-profile").click(function(){
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
           </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
-          </div>
         </div>
       `;          
 
@@ -1010,9 +989,6 @@ $("#btn-profile").click(function(){
         <div class="row">
           <div class="col-md-3">            
             <img src="${response.Poster}" class="thumbnail movie-poster">
-          </div>
-          <div class="col-md-9">
-            <input type="button" value="Notificar">
           </div>
         </div>
       `;          
