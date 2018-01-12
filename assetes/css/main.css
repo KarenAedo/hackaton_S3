@@ -231,12 +231,7 @@ img.movie{
 }
 .imgUser{
 	margin-top: 3.5em;
-}
-.btn-notify{
-	background-color: #E8C00B;
-	color: #fff;
-	border: 0.3em solid #E8C00B;
-	border-radius: 3%; 
+	width: 100%;
 }
 
 
@@ -338,4 +333,16 @@ img.movie{
 
 .logo-footer{
 	width: 100%;
+}
+
+#miniDefaultRounded {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 330px;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+  width: 100%;
 }

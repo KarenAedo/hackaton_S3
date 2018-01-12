@@ -83,7 +83,7 @@
       	<li id="btn-principal"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Página principal</a></li>
       	<li id="btn-salir"><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Iniciar sesión / Salir</a></li>
       	<li id="btn-profile"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mis datos</a></li>
-      	<li class="pay-col"><a href="https://www.cinemark.cl/" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a></li>
+      	<li class="pay-col"><a href="https://www.cinemark.cl/movies" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a></li>
     	</ul>
    </div>
 </nav>
@@ -255,14 +255,31 @@
 		<!--foto usuario-->
 		<div class="col-xs-2 col-md-1">
 			<!--<span class="glyphicon glyphicon-user text-center" id="icon-profile" aria-hidden="true"></span>-->
-			<img src="assetes/img/user-x.png" alt="#" class="img-responsive img-circle imgUser">
+			<img src="assetes/img/user-x.png" alt="#" class="img-responsive img-circle imgUser" data-toggle="modal" data-target="#miniDefaultRounded">
 		</div>
 		<!--nombre usuario-->
 		<div class="col-xs-10 col-md-11">
 			<h4 class="text-profile">Karen Aedo</h4>
-			<button class="btn-notify" id="miniDefaultRounded">Notifícame</button>
+			
 			<hr class="myPreferencesHr">
 		</div>
+	</div>
+
+
+	<div class="modal fade" id="miniDefaultRounded" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="title-modal" id="exampleModalLabel">Notificación</h2>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p class="resumen-modal">La preventa para tu película Star Wars, el último Jedi ya se encuentra disponible</p>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
 <div class="container" id="section-notifications">
