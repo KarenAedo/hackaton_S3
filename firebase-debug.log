@@ -39,3 +39,127 @@
 [info] i  hosting: Serving hosting files from: ./
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2018-01-11T22:23:17.450Z] ----------------------------------------------------------------------
+[debug] [2018-01-11T22:23:17.454Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-01-11T22:23:17.454Z] CLI Version:   3.16.0
+[debug] [2018-01-11T22:23:17.454Z] Platform:      linux
+[debug] [2018-01-11T22:23:17.454Z] Node Version:  v9.4.0
+[debug] [2018-01-11T22:23:17.454Z] Time:          Thu Jan 11 2018 19:23:17 GMT-0300 (CLST)
+[debug] [2018-01-11T22:23:17.454Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-11T22:23:17.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-11T22:23:17.524Z] > authorizing via signed-in user
+[debug] [2018-01-11T22:23:17.526Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-11T22:23:17.527Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/e1X7-inZDe2WgxQFfbSC-qtqDHSMjP6uLD8EmIV9WQI',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jan 11 2018 19:23:17 GMT-0300 (CLST)
+[debug] [2018-01-11T22:23:17.844Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T22:23:17.877Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hackaton-cine  
+  
+ Thu Jan 11 2018 19:23:17 GMT-0300 (CLST)
+[debug] [2018-01-11T22:23:19.077Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T22:23:19.078Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hackaton-cine/tokens  
+  
+ Thu Jan 11 2018 19:23:19 GMT-0300 (CLST)
+[debug] [2018-01-11T22:23:20.472Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/laboratoria/Desktop/ejercicios_github/sprint4/hackaton_S3'...
+[info] 
+[debug] [2018-01-11T22:23:20.478Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hackaton-cine  
+  
+ Thu Jan 11 2018 19:23:20 GMT-0300 (CLST)
+[debug] [2018-01-11T22:23:21.596Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T22:23:21.600Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/585940732674/clients/_:getWebAppConfig  
+  
+ Thu Jan 11 2018 19:23:21 GMT-0300 (CLST)
+[debug] [2018-01-11T22:23:22.217Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-01-11T22:55:50.398Z] Error: write EIO
+    at _errnoException (util.js:1003:13)
+    at WriteWrap.afterWrite [as oncomplete] (net.js:863:14)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-01-11T22:55:50.471Z] Error: write EIO
+    at _errnoException (util.js:1003:13)
+    at WriteWrap.afterWrite [as oncomplete] (net.js:863:14)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-01-11T23:03:23.049Z] ----------------------------------------------------------------------
+[debug] [2018-01-11T23:03:23.053Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-01-11T23:03:23.053Z] CLI Version:   3.16.0
+[debug] [2018-01-11T23:03:23.053Z] Platform:      linux
+[debug] [2018-01-11T23:03:23.053Z] Node Version:  v9.4.0
+[debug] [2018-01-11T23:03:23.053Z] Time:          Thu Jan 11 2018 20:03:23 GMT-0300 (CLST)
+[debug] [2018-01-11T23:03:23.054Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-11T23:03:23.114Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-11T23:03:23.115Z] > authorizing via signed-in user
+[debug] [2018-01-11T23:03:23.118Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hackaton-cine  
+  
+ Thu Jan 11 2018 20:03:23 GMT-0300 (CLST)
+[debug] [2018-01-11T23:03:24.137Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T23:03:24.139Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hackaton-cine/tokens  
+  
+ Thu Jan 11 2018 20:03:24 GMT-0300 (CLST)
+[debug] [2018-01-11T23:03:25.120Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/laboratoria/Desktop/ejercicios_github/sprint4/hackaton_S3'...
+[info] 
+[debug] [2018-01-11T23:03:25.123Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hackaton-cine  
+  
+ Thu Jan 11 2018 20:03:25 GMT-0300 (CLST)
+[debug] [2018-01-11T23:03:26.249Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T23:03:26.253Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/585940732674/clients/_:getWebAppConfig  
+  
+ Thu Jan 11 2018 20:03:26 GMT-0300 (CLST)
+[debug] [2018-01-11T23:03:27.578Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-01-11T23:18:23.555Z] ----------------------------------------------------------------------
+[debug] [2018-01-11T23:18:23.558Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-01-11T23:18:23.558Z] CLI Version:   3.16.0
+[debug] [2018-01-11T23:18:23.558Z] Platform:      linux
+[debug] [2018-01-11T23:18:23.558Z] Node Version:  v9.4.0
+[debug] [2018-01-11T23:18:23.558Z] Time:          Thu Jan 11 2018 20:18:23 GMT-0300 (CLST)
+[debug] [2018-01-11T23:18:23.558Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-11T23:18:23.568Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-11T23:18:23.569Z] > authorizing via signed-in user
+[debug] [2018-01-11T23:18:23.571Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-11T23:18:23.571Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/e1X7-inZDe2WgxQFfbSC-qtqDHSMjP6uLD8EmIV9WQI',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jan 11 2018 20:18:23 GMT-0300 (CLST)
+[debug] [2018-01-11T23:18:23.875Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T23:18:23.911Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hackaton-cine  
+  
+ Thu Jan 11 2018 20:18:23 GMT-0300 (CLST)
+[debug] [2018-01-11T23:18:25.057Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T23:18:25.059Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hackaton-cine/tokens  
+  
+ Thu Jan 11 2018 20:18:25 GMT-0300 (CLST)
+[debug] [2018-01-11T23:18:25.726Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/laboratoria/Desktop/ejercicios_github/sprint4/hackaton_S3'...
+[info] 
+[debug] [2018-01-11T23:18:25.731Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hackaton-cine  
+  
+ Thu Jan 11 2018 20:18:25 GMT-0300 (CLST)
+[debug] [2018-01-11T23:18:26.791Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-11T23:18:26.795Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/585940732674/clients/_:getWebAppConfig  
+  
+ Thu Jan 11 2018 20:18:26 GMT-0300 (CLST)
+[debug] [2018-01-11T23:18:28.020Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
+

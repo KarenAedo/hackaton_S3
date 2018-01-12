@@ -62,44 +62,44 @@ $('#upload-profile').change(function(){
 
 //--------------------------------------------------------------------------------------
 
-function notifyMe() {
+//function notifyMe() {
   // Comprobamos si el navegador soporta las notificaciones
-  if (!("Notification" in window)) {
-    alert("Este navegador no soporta las notificaciones del sistema");
-  }
+ // if (!("Notification" in window)) {
+   // alert("Este navegador no soporta las notificaciones del sistema");
+ // }
 
   // Comprobamos si ya nos habían dado permiso
-  else if (Notification.permission === "granted") {
+ // else if (Notification.permission === "granted") {
     // Si esta correcto lanzamos la notificación
-    var notification = new Notification("Holiwis :D");
-  }
+   // var notification = new Notification("Holiwis :D");
+ // }
 
   // Si no, tendremos que pedir permiso al usuario
-  else if (Notification.permission !== 'denied') {
-    Notification.requestPermission(function (permission) {
+  //else if (Notification.permission !== 'denied') {
+    //Notification.requestPermission(function (permission) {
       // Si el usuario acepta, lanzamos la notificación
-      if (permission === "granted") {
-        var notification = new Notification("Gracias majo!");
-      }
-    });
-  }
+      //if (permission === "granted") {
+     //   var notification = new Notification("Gracias majo!");
+   //   }
+   // });
+//  }
 
   // Finalmente, si el usuario te ha denegado el permiso y 
   // quieres ser respetuoso no hay necesidad molestar más.
-}
-
+//}
+/*
 Push.Permission.request();
 Push.create('Hi there!', {
     body: 'This is a notification.',
     icon: 'icon.png',
-    timeout: 8000,               // Timeout before notification closes automatically.
-    vibrate: [100, 100, 100],    // An array of vibration pulses for mobile devices.
+    timeout: 8000,             
+    vibrate: [100, 100, 100],
     onClick: function() {
-        // Callback for when the notification is clicked. 
+ 
         console.log(this);
     }  
-});
-
+});*/
+  Push.create('Hola mundo');
 
 
 //--------------------------------------------------------------------------------------
