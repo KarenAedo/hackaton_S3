@@ -138,6 +138,7 @@ $('#btn-notice').click(function(){
     $('.movies').hide();
     $('#my-data').hide();
     $('#section-estrenos').hide();
+    
 
 //al hacer click en iniciar sesión me lleve a mi página de inicio ------------------
 
@@ -152,6 +153,8 @@ $('#btn-notice').click(function(){
         $('.movies').show();
         $('#my-data').hide();
         $('#section-estrenos').hide();
+        $('#movie-list').show();
+        
       }
   });
 
@@ -166,6 +169,8 @@ $('#btn-notice').click(function(){
       $('.search-movie').show();
       $('.movies').hide();
       $('#section-estrenos').hide();
+      $('#movie-list').show();
+      
       
     }
 });
@@ -178,6 +183,7 @@ $("#btn-profile").click(function(){
   $('#my-data').show();
   $('#section-estrenos').hide();
   $('#notify').show();
+  
   
   
 });
@@ -1014,6 +1020,7 @@ $('#btn-estrenos').click(function(){
   $('#my-data').hide();
   $('#notify').hide();
   $('#section-estrenos').show();
+  
 
 });
 
@@ -1025,6 +1032,7 @@ $('#btn-preventas').click(function(){
   $('#section-estrenos').hide();
   $('#section-notice').hide();
   $('#my-data').hide();
+  
 
 });
 
@@ -1053,6 +1061,19 @@ $('#btn-principal').click(function(){
   $('#my-data').hide();
   $('#notify').hide();
   $('#section-notice').hide();  
+});
+
+//Iniciar sesión / salir  ----------------------------------------------------------
+
+$('#btn-salir').click(function(){
+  $('#section-index').hide();
+  $('#movie-list').hide();
+  $('#my-data').hide();
+  $('#notify').hide();
+  $('#section-notice').hide();
+  $('.navbar').hide();
+  $('#notify').hide();
+  $('#registry').show();
 });
 
 //funcion que muestra fotos segun busqueda

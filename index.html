@@ -75,12 +75,11 @@
    </div>
  
   <!-- Enlaces de navegación -->
- 	<div class="collapse navbar-collapse navbar-ex1-collapse">
+ 	<div class="collapse navbar-collapse navbar-ex1-collapse" id="menu">
     	<ul class="nav navbar-nav navbar-right">
 
       	<li id="btn-principal"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Página principal</a></li>
-
-      	<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Iniciar sesión / Salir</a></li>
+      	<li id="btn-salir"><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Iniciar sesión / Salir</a></li>
       	<li id="btn-profile"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mis datos</a></li>
       	<li class="pay-col"><a href="https://www.cinemark.cl/" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a></li>
     	</ul>
@@ -249,7 +248,6 @@
 
 <!-- Mis Datos -->
 <div class="container-fluid" id="my-data">
-	
 	<div class="row">
 		<!--foto usuario-->
 		<div class="col-xs-2 col-md-1">
@@ -259,18 +257,17 @@
 		<div class="col-xs-10 col-md-11">
 			<h3 class="text-profile">Karen Aedo</h3>
 		</div>
-	</div>
-	
-</div>
-<div class="container" id="section-notifications">
-  <div class="row">
+	</div>	
+	<div class="row">
     <div class="col-xs-12 col-md-12">
       <h4 class="preferences">Mis Notificaciones</h4>
     </div>
-  </div>
-  <div>
-    <h2 id="notify"></h2>
-  </div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h2 id="notify"></h2>
+		</div>
+	</div>
 </div>
 
 
@@ -316,8 +313,10 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<div class="modalTitle">
-								<h2 class="title-modal">Molly's Game</h2>
+							<div class="row">
+								<div class="modalTitle col-md-12">
+									<h2 class="title-modal">Molly's Game</h2>
+								</div>
 							</div>
 						</div>
 						<div class="modal-body">
@@ -327,11 +326,11 @@
 								</div>
 								<div class="col-md-6 list-modal">
 									<ul class="list-group">
-										<li class="list-group-item"><strong>Género:</strong><p>Drama</p></li>
-										<li class="list-group-item"><strong>Duración:</strong><p>141 min.</p></li>
-										<li class="list-group-item"><strong>Año:</strong><p>2017</p></li>
-										<li class="list-group-item"><strong>Director:</strong><p>Aaron Sorkin</p></li>
-										<li class="list-group-item"><strong>Reparto:</strong><p>Jessica Chastain, Idris Elba, Kevin Costner.</p></li>
+										<li class="list-group-item"><strong>Género:</strong><p class="text-movie">Drama</p></li>
+										<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">141 min.</p></li>
+										<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2017</p></li>
+										<li class="list-group-item"><strong>Director:</strong><p class="text-movie">Aaron Sorkin</p></li>
+										<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Jessica Chastain, Idris Elba, Kevin Costner.</p></li>
 									</ul>
 								</div>
 								<div class="col-md-12 resumen-modal">
@@ -356,220 +355,327 @@
 		<div class="col-xs-6 col-md-3 movie">
 			<img src="assetes/img/estreno-img/poster-02.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos2" class="movie">
 			<!--Modal-->
-			<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos2">
+			<div class="modal fade" id="modal-estrenos2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title">Tadeo, El Explorador Perdido 2: El Secreto Del Rey Midas</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<div class="row">
+								<div class="modalTitle col-md-12">
+									<h2 class="title-modal">Tadeo, El Explorador Perdido 2: El Secreto Del Rey Midas</h2>
+								</div>
+							</div>
 						</div>
-						<div class="modal-body thumbnail">
-							<img src="assetes/img/estreno-img/poster-02.jpg" alt="">
-						
-							<ul class="list-group">
-								<li class="list-group-item"><strong>Director:</strong><p>David Alonso – Enrique Gato</p></li>
-								<li class="list-group-item"><strong>Reparto:</strong><p>Óscar Barberán, Michelle Jenner, Adriana Ugarte.</p></li>
-							  	<li class="list-group-item"><strong>Sinopsis:</strong><p>Tad Jones, el explorador más torpe, debe rescatar 
+						<div class="modal-body">
+							 <div class="row">
+								<div class="col-md-6">
+									<img src="assetes/img/estreno-img/poster-02.jpg" alt="" class="img-modal-movie">
+								</div>
+								<div class="col-md-6 list-modal">
+									<ul class="list-group">
+										<li class="list-group-item"><strong>Género:</strong><p class="text-movie">Aventura / Comedia</p></li>
+										<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">126 min.</p></li>
+										<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2017</p></li>
+										<li class="list-group-item"><strong>Director:</strong><p class="text-movie">Enrique Gato</p></li>
+										<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Óscar Barberán, Michelle Jenner, Adriana Ugarte.</p></li>
+									</ul>
+								</div>
+								<div class="col-md-12 resumen-modal">
+									<h3>Sinopsis</h3>
+									<p>Tad Jones, el explorador más torpe, debe rescatar 
 									  a su querida Sara de un millonario que está buscando la ubiación de las tres partes del collar del 
-									  Rey Midas.</p></li>
-							</ul>
-					</div>
-						<div class="modal-footer">
-							<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+									  Rey Midas.</p>
+									<hr>
+								</div>
+								
+								<div class="col-md-12">
+									<a href="#" class="btn btn-notificame btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+								</div>
+							 </div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
+		</div>			
+			
 		<div class="col-xs-6 col-md-3 movie">
 				<img src="assetes/img/estreno-img/poster-03.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos3" class="movie">
-				<!--Modal-->
-				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos3">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Game Night</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
+			<!--Modal-->
+				<div class="modal fade" id="modal-estrenos3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">	
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<div class="row">
+								<div class="modalTitle col-md-12">
+									<h2 class="title-modal">Game Night</h2>
+								</div>
 							</div>
-							<div class="modal-body thumbnail">
-								<img src="assetes/img/estreno-img/poster-03.jpg" alt="">
-							
-								<ul class="list-group">
-									<li class="list-group-item"><strong>Director:</strong><p>John Francis Daley y Jonathan Goldstein</p></li>
-									<li class="list-group-item"><strong>Reparto:</strong><p>Jason Bateman, Rachel McAdams, Lamorne Morris, Michael C. Hall, Kyle Chandler</p></li>
-									<li class="list-group-item"><strong>Sinopsis:</strong><p>Jason Bateman y Rachel McAdams interpretan a Max y Annie, una pareja que participa 
-										en una reunión semanal de noche de juegos con amigos.</p></li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
-							</div>
+						</div>
+						<div class="modal-body">
+							 <div class="row">
+								<div class="col-md-6">
+									<img src="assetes/img/estreno-img/poster-03.jpg" alt="" class="img-modal-movie">
+								</div>
+								<div class="col-md-6 list-modal">
+									<ul class="list-group">
+										<li class="list-group-item"><strong>Género:</strong><p class="text-movie">Misterio</p></li>
+										<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">133 min.</p></li>
+										<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2018</p></li>
+										<li class="list-group-item"><strong>Director:</strong><p class="text-movie">John Francis Daley y Jonathan Goldstein</p></li>
+										<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Jason Bateman, Rachel McAdams, Lamorne Morris, Michael C. Hall, Kyle Chandler</p></li>
+									</ul>
+								</div>
+								<div class="col-md-12 resumen-modal">
+									<h3>Sinopsis</h3>
+									<p>Jason Bateman y Rachel McAdams interpretan a Max y Annie, una pareja que participa 
+										en una reunión semanal de noche de juegos con amigos.</p>
+									<hr>
+								</div>
+								
+								<div class="col-md-12">
+									<a href="#" class="btn btn-notificame btn-default" disabled="disabled"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+									<span class="glyphicon glyphicon-calendar modal-icon" aria-hidden="true"></span>
+									<p class="text-alert">Sin fecha de estreno, intenta más tarde</p>
+								</div>
+							 </div>
 						</div>
 					</div>
 				</div>
-		</div>
+			</div>
+		</div>		
 
 		<div class="col-xs-6 col-md-3 movie">
 				<img src="assetes/img/estreno-img/poster-04.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos4" class="movie">
 				<!--Modal-->
-				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos4">
+				<div class="modal fade" id="modal-estrenos4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title">The Nutcracker and the Four Realms</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<div class="row">
+									<div class="modalTitle col-md-12">
+										<h2 class="title-modal">The Nutcracker and the Four Realms</h2>
+									</div>
+								</div>
 							</div>
-							<div class="modal-body thumbnail">
-								<img src="assetes/img/estreno-img/poster-04.jpg" alt="">
-							
-								<ul class="list-group">
-									<li class="list-group-item"><strong>Director:</strong><p>Lasse Hallström, Joe Johnston</p></li>
-									<li class="list-group-item"><strong>Reparto:</strong><p>Keira Knightley, Morgan Freeman, Matthew Macfadyen</p></li>
-									<li class="list-group-item"><strong>Sinopsis:</strong><p>Todas las leyendas tienen un lado oscuro. Es hora 
-										de que conozcas el misterio que envuelve a 'El Cascanueces y Los Cuatro Reinos'.</p></li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							<div class="modal-body">
+								 <div class="row">
+									<div class="col-md-6">
+										<img src="assetes/img/estreno-img/poster-04.jpg" alt="" class="img-modal-movie">
+									</div>
+									<div class="col-md-6 list-modal">
+										<ul class="list-group">
+											<li class="list-group-item"><strong>Género:</strong><p class="text-movie">Fantasía / Acción</p></li>
+											<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">126 min.</p></li>
+											<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2018</p></li>
+											<li class="list-group-item"><strong>Director:</strong><p class="text-movie">Lasse Hallström, Joe Johnston</p></li>
+											<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Keira Knightley, Morgan Freeman, Matthew Macfadyen.</p></li>
+										</ul>
+									</div>
+									<div class="col-md-12 resumen-modal">
+										<h3>Sinopsis</h3>
+										<p>Todas las leyendas tienen un lado oscuro. Es hora 
+											de que conozcas el misterio que envuelve a 'El Cascanueces y Los Cuatro Reinos'.</p>
+										<hr>
+									</div>
+									
+									<div class="col-md-12">
+										<a href="#" class="btn btn-notificame btn-default" disabled="disabled"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+										<span class="glyphicon glyphicon-calendar modal-icon" aria-hidden="true"></span>
+										<p class="text-alert">Sin fecha de estreno, intenta más tarde.</p>
+									</div>
+								 </div>
 							</div>
 						</div>
 					</div>
 				</div>
-		</div>
-		
+			</div>			
+								
 		<div class="col-xs-6 col-md-3 movie">
 				<img src="assetes/img/estreno-img/poster-05.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos5" class="movie">
 				<!--Modal-->
-				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos5">
+				<div class="modal fade" id="modal-estrenos5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title">Peter Rabbit</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<div class="row">
+									<div class="modalTitle col-md-12">
+										<h2 class="title-modal">Peter Rabbit</h2>
+									</div>
+								</div>
 							</div>
-							<div class="modal-body thumbnail">
-								<img src="assetes/img/estreno-img/poster-05.jpg" alt="">
-							
-								<ul class="list-group">
-									<li class="list-group-item"><strong>Director:</strong><p>Will Gluck</p></li>
-									<li class="list-group-item"><strong>Reparto:</strong><p>Domhnall Gleeson, James Corden</p></li>
-									<li class="list-group-item"><strong>Sinopsis:</strong><p>Peter Rabbit no es un conejo cualquiera. 
-										Es un rebelde que viste camisa azul y no lleva pantalones.</p></li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+							<div class="modal-body">
+								 <div class="row">
+									<div class="col-md-6">
+										<img src="assetes/img/estreno-img/poster-05.jpg" alt="" class="img-modal-movie">
+									</div>
+									<div class="col-md-6 list-modal">
+										<ul class="list-group">
+											<li class="list-group-item"><strong>Género:</strong><p class="text-movie">Fantasía / Aventura</p></li>
+											<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">130 min.</p></li>
+											<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2018</p></li>
+											<li class="list-group-item"><strong>Director:</strong><p class="text-movie">Will Gluck</p></li>
+											<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Domhnall Gleeson, James Corden</p></li>
+										</ul>
+									</div>
+									<div class="col-md-12 resumen-modal">
+										<h3>Sinopsis</h3>
+										<p>Adaptación cinematográfica del libro infantil que en España conocemos como ‘Pedrito, el conejo travieso’ 
+											que escribió Beatrix Potter a principios del siglo XX. Peter Rabbit no es un conejo cualquiera. Es 
+											un rebelde que viste camisa azul y no lleva pantalones.</p>
+										<hr>
+									</div>
+									
+									<div class="col-md-12">
+										<a href="#" class="btn btn-notificame btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+									</div>
+								 </div>
 							</div>
 						</div>
 					</div>
 				</div>
-		</div>
-		
+			</div>							
+				
 		<div class="col-xs-6 col-md-3 movie">
 				<img src="assetes/img/estreno-img/poster-06.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos6" class="movie">
 				<!--Modal-->
-				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos6">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">The New Mutants</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body thumbnail">
-								<img src="assetes/img/estreno-img/poster-06.jpg" alt="">
-							
-								<ul class="list-group">
-									<li class="list-group-item"><strong>Director:</strong><p>Josh Boone</p></li>
-									<li class="list-group-item"><strong>Reparto:</strong><p>Anya Taylor –Joy, Maisie Williams, Alice Braga, Henry Zaga, Charlie Heaton</p></li>
-									<li class="list-group-item"><strong>Sinopsis:</strong><p>La historia de los Nuevos Mutantes, un equipo de héroes compuesto por 
-										los primeros graduados de la escuela de Charles Xavier.</p></li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+				<div class="modal fade" id="modal-estrenos6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<div class="row">
+										<div class="modalTitle col-md-12">
+											<h2 class="title-modal">The New Mutants</h2>
+										</div>
+									</div>
+								</div>
+								<div class="modal-body">
+									 <div class="row">
+										<div class="col-md-6">
+											<img src="assetes/img/estreno-img/poster-06.jpg" alt="" class="img-modal-movie">
+										</div>
+										<div class="col-md-6 list-modal">
+											<ul class="list-group">
+												<li class="list-group-item"><strong>Género:</strong><p class="text-movie">Fantasía / Acción</p></li>
+												<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">130 min.</p></li>
+												<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2019</p></li>
+												<li class="list-group-item"><strong>Director:</strong><p class="text-movie">Josh Boone</p></li>
+												<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Anya Taylor –Joy, Maisie Williams, Alice Braga, Henry Zaga, Charlie Heaton</p></li>
+											</ul>
+										</div>
+										<div class="col-md-12 resumen-modal">
+											<h3>Sinopsis</h3>
+											<p>La historia de los Nuevos Mutantes, un equipo de héroes compuesto por los primeros graduados 
+												de la escuela de Charles Xavier.</p>
+											<hr>
+										</div>
+										
+										<div class="col-md-12">
+											<a href="#" class="btn btn-notificame btn-default" disabled="disabled"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+											<span class="glyphicon glyphicon-calendar modal-icon" aria-hidden="true"></span>
+											<p class="text-alert">Sin fecha de estreno, intenta más tarde.</p>
+										</div>
+									 </div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-		</div>
-
+				</div>											
+			
 		<div class="col-xs-6 col-md-3 movie">
 				<img src="assetes/img/estreno-img/poster-07.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos7" class="movie">
 				<!--Modal-->
-				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos7">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Alpha</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body thumbnail">
-								<img src="assetes/img/estreno-img/poster-07.jpg" alt="" class="img-modal-movie">
-							
-								<ul class="list-group">
-									<li class="list-group-item"><strong>Director:</strong><p>Albert Hughes</p></li>
-									<li class="list-group-item"><strong>Reparto:</strong><p>Kodi Smit-McPhee, Leonor Varela, Natassia Malthe, 
-										Mercedes de la Zerda y Jóhannes Haukur Jóhannesson</p></li>
-									<li class="list-group-item"><strong>Sinopsis:</strong><p>En el Paleolítico, 20.000 años antes de 
-										Cristo, un joven tiene que embarcarse en una dura expedición para encontrar a su tribu,</p></li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+				<div class="modal fade" id="modal-estrenos7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">	
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<div class="row">
+										<div class="modalTitle col-md-12">
+											<h2 class="title-modal">Alpha</h2>
+										</div>
+									</div>
+								</div>
+								<div class="modal-body">
+									 <div class="row">
+										<div class="col-md-6">
+											<img src="assetes/img/estreno-img/poster-07.jpg" alt="" class="img-modal-movie">
+										</div>
+										<div class="col-md-6 list-modal">
+											<ul class="list-group">
+												<li class="list-group-item"><strong>Género:</strong><p class="text-movie">Suspenso / Acción</p></li>
+												<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">133 min.</p></li>
+												<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2018</p></li>
+												<li class="list-group-item"><strong>Director:</strong><p class="text-movie">Albert Hughes</p></li>
+												<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Kodi Smit-McPhee, Leonor Varela, Natassia Malthe, 
+														Mercedes de la Zerda y Jóhannes Haukur Jóhannesson</p></li>
+											</ul>
+										</div>
+										<div class="col-md-12 resumen-modal">
+											<h3>Sinopsis</h3>
+											<p>En el Paleolítico superior europe, 20.000 años antes de Cristo, un joven tiene que embarcarse en una dura expedición 
+												para encontrar a su tribu, enfrentándose a inhóspitos terrenos, terribles condiciones y todo tipo de 
+												peligros.</p>
+											<hr>
+										</div>
+										
+										<div class="col-md-12">
+											<a href="#" class="btn btn-notificame btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+										</div>
+									 </div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-		</div>
+				</div>				
+				
 		<div class="col-xs-6 col-md-3 movie">
 				<img src="assetes/img/estreno-img/poster-08.jpg" alt="" data-toggle="modal" data-target="#modal-estrenos8" class="movie">
 				<!--Modal-->
-				<div class="modal" tabindex="-1" role="dialog" id="modal-estrenos8">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Wonder Wheel</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body thumbnail">
-								<img src="assetes/img/estreno-img/poster-08.jpg" alt="">
-							
-								<ul class="list-group">
-									<li class="list-group-item"><strong>Director:</strong><p>Woody Allen</p></li>
-									<li class="list-group-item"><strong>Reparto:</strong><p>Kate Winslet, Justin Timberlake, Juno Temple</p></li>
-									<li class="list-group-item"><strong>Sinopsis:</strong><p>Ginny (Kate Winslet) es la esposa de un operador de 
-										carrusel, Humpty (Jim Belushi), que trabaja en un parque en la playa de Coney Island.</p></li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+				<div class="modal fade" id="modal-estrenos8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">	
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<div class="row">
+										<div class="modalTitle col-md-12">
+											<h2 class="title-modal">The Little Vampire</h2>
+										</div>
+									</div>
+								</div>
+								<div class="modal-body">
+									 <div class="row">
+										<div class="col-md-6">
+											<img src="assetes/img/estreno-img/poster-08.jpg" alt="" class="img-modal-movie">
+										</div>
+										<div class="col-md-6 list-modal">
+											<ul class="list-group">
+												<li class="list-group-item"><strong>Género:</strong><p class="text-movie">fantástico / Aventura</p></li>
+												<li class="list-group-item"><strong>Duración:</strong><p class="text-movie">123 min.</p></li>
+												<li class="list-group-item"><strong>Año:</strong><p class="text-movie">2018</p></li>
+												<li class="list-group-item"><strong>Director:</strong><p class="text-movie">Richard Claus, Karsten Kiilerich</p></li>
+												<li class="list-group-item"><strong>Reparto:</strong><p class="text-movie">Jim Carter, Rasmus Hardiker y Alice Krige.</p></li>
+											</ul>
+										</div>
+										<div class="col-md-12 resumen-modal">
+											<h3>Sinopsis</h3>
+											<p>El Pequeño Vampiro está basada en los best-sellers para niños de Angela Sommer-Bodenburg. Cuenta la historia de Rudolph, 
+												un vampiro de 13 años, cuyo clan está siendo amenazado por un peligroso cazador de vampiros.</p>
+											<hr>
+										</div>
+										
+										<div class="col-md-12">
+											<a href="#" class="btn btn-notificame btn-default"><span class="glyphicon glyphicon-bell"></span> Notificarme</a>
+										</div>
+									 </div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-		</div>		
-	</div>	
-</div>
-		
-
-
-
-
+				</div>						
 <!--link firebase-->
   
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
