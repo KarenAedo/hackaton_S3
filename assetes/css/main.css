@@ -73,7 +73,7 @@ body{
 }
 
 .nav-pills{
- 	display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -234,4 +234,22 @@ img.movie{
 .movie-poster {
 	width: 200px;
 	height: 300px;
+}
+
+/*Busqueda otras peliculas*/
+#foundMovies .well {
+	width: 100%;
+	height: 450px;
+	background-color: #F7F8F9;
+	margin-top: 10%;
+}
+.searchPoster {
+	width: 100%;
+	height: 360px;
+}
+.movieTitle {
+	margin-top: 10%;
+}
+.error-msg {
+	color: red;
 }

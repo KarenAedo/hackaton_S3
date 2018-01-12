@@ -1055,3 +1055,44 @@ $('#btn-principal').click(function(){
   $('#section-notice').hide();  
 });
 
+//funcion que muestra fotos segun busqueda
+$(".btn-search").click(function(){
+    var txt = "";
+    var searchText = $("#searchText").val();
+    $.ajax({
+      url: 'http://www.omdbapi.com?apikey=a839f700',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        s: searchText
+      },
+    })
+    .done(function(response) {
+      console.log(response);
+      if(response.Response === "False") {
+        $('#foundMovies').html("<h3 class='text-center error-msg'>Movie not found</h3>");
+      } else {
+        $.each(response.Search, function(index, val) {
+         /* iterate through array or object */
+         txt+=`
+          <div class="col-md-3 col-lg-3">
+            <div class="well text-center">
+              <img src="${val.Poster}" class="searchPoster">
+              <h4 class="movieTitle">${val.Title}</h4>
+            </div>
+          </div>
+        `;
+      });
+      $("#foundMovies").html(txt);
+      }
+      
+
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+     // console.log("complete");
+    });
+
+  });
